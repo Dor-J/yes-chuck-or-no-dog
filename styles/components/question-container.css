@@ -1,0 +1,13 @@
+.question-container label {
+  width: 100%;
+  min-width: 200px;
+  min-height: 30px;
+  border-radius: 0.5em;
+  text-align: center;
+}
+.question-container input {
+  width: 100%;
+  min-width: 25vw;
+  min-height: 30px;
+  border-radius: 0.5em;
+}

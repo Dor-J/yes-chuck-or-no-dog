@@ -1,0 +1,42 @@
+main.main-container {
+  border-radius: 3em;
+  background-color: var(--clr-secondary-blue-light-1);
+  max-width: 80vw;
+  padding: 1em 0.5em;
+
+  margin: auto auto;
+}
+
+main.main-container h2 span.span-yes {
+  color: var(--clr-yes);
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+main.main-container h2 span.span-no {
+  color: var(--clr-no);
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+main.main-container h2 span.span-yes:hover {
+  color: var(--clr-yes-1);
+}
+
+main.main-container h2 span.span-no:hover {
+  color: var(--clr-no-1);
+}
+
+main.main-container h2 span.span-yes:hover {
+  color: var(--clr-yes-1);
+}
+main.main-container h2 span.span-no:hover {
+  color: var(--clr-no-1);
+}
+
+main.main-container h2 span.span-yes:hover,
+main.main-container h2 span.span-no:hover {
+  background-color: var(--clr-secondary-blue-light);
+  border-radius: 1em;
+  padding: 0.2em 0.5em;
+}

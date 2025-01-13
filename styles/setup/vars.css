@@ -13,6 +13,8 @@
   --bg-clr-secondary-1: #71c9ce;
 
   /* ---- Action Colors ---- */
-  --clr-yes: #28a745; /* Green for Yes */
-  --clr-no: #dc3545; /* Red for No */
+  --clr-yes: #3ec803;
+  --clr-yes-1: #45e103;
+  --clr-no: #e80331;
+  --clr-no-1: #ff0558;
 }

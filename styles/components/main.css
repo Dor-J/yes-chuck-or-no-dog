@@ -1,8 +1,0 @@
-main.main-container {
-  border-radius: 2em;
-  background-color: var(--clr-secondary-blue-light-1);
-  max-width: 50vw;
-  padding: 1em;
-
-  margin: auto auto;
-}

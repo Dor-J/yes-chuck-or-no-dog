@@ -3,29 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/yes-or-no-favicon.jpg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <title>Yes or No</title>
   </head>
-  <body>
+  <body onload="onInit()">
     <header class="header flex f-ai-center f-jc-center">
       <h1>Yes or No: The game</h1>
     </header>
 
-    <main class="main-container grid g-pi-center grid-gap-1">
+    <main class="main-container grid g-pi-center">
       <h2>
         ASK ANYTHING<br />
-        <span class="span-yes">Yes</span> or <span class="span-no">no</span>
+        <span class="span-yes">Yes</span> or <span class="span-no">No</span>
       </h2>
-      <div
-        class="question-container flex-col fc-jc-center fc-ai-center fc-gap-05"
-      >
+      <div class="question-container grid g-pi-center">
         <label for="user-question"> Enter question</label>
-        <input type="text" name="user-question" id="user-question" />
+        <input
+          type="text"
+          name="user-question"
+          id="user-question"
+          required
+          placeholder="Your Question"
+          pattern="^.{3,}\?$"
+        />
       </div>
       <div class="answer-container card">
-        <h3>Your answer is <span>not yet given.</span></h3>
+        <h3>
+          Your answer is <br />
+          <span>Not yet given.</span>
+        </h3>
+        <p class="quote"></p>
         <div class="img-container">
-          <!-- <img src="" alt="" /> -->
+          <div hidden class="loader-container">
+            <img src="assets/svg/loader.svg" alt="Loading data" />
+          </div>
+          <img
+            src="assets/images/yes-or-no-placeholder.jpg"
+            alt="yes or no place holder"
+            class="answer-image"
+          />
         </div>
       </div>
     </main>
@@ -33,5 +54,11 @@
     <footer class="footer flex f-ai-center f-jc-center">
       <p>CaDec24 &copy; ex-yes-no</p>
     </footer>
+
+    <script src="js/services/get-data.service.js"></script>
+    <script src="js/services/utils.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/main.service.js"></script>
+    <script src="js/main.controller.js"></script>
   </body>
 </html>
