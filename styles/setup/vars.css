@@ -1,0 +1,18 @@
+:root {
+  /* ---- Primary Colors ---- */
+  --clr-primary-black: #000000;
+  --clr-primary-white: #ffffff;
+  --clr-primary-gray: #808080;
+
+  /* ---- Secondary Colors ---- */
+  --clr-secondary-blue-light: #cbf1f5;
+  --clr-secondary-blue-light-1: #a6e3e9;
+
+  /* ---- Background Colors ---- */
+  --bg-clr-base: #e3fdfd;
+  --bg-clr-secondary-1: #71c9ce;
+
+  /* ---- Action Colors ---- */
+  --clr-yes: #28a745; /* Green for Yes */
+  --clr-no: #dc3545; /* Red for No */
+}

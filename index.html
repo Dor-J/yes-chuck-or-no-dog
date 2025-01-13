@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Yes or No</title>
+  </head>
+  <body>
+    <header class="header flex f-ai-center f-jc-center">
+      <h1>Yes or No: The game</h1>
+    </header>
+
+    <main class="main-container grid g-pi-center grid-gap-1">
+      <h2>
+        ASK ANYTHING<br />
+        <span class="span-yes">Yes</span> or <span class="span-no">no</span>
+      </h2>
+      <div
+        class="question-container flex-col fc-jc-center fc-ai-center fc-gap-05"
+      >
+        <label for="user-question"> Enter question</label>
+        <input type="text" name="user-question" id="user-question" />
+      </div>
+      <div class="answer-container card">
+        <h3>Your answer is <span>not yet given.</span></h3>
+        <div class="img-container">
+          <!-- <img src="" alt="" /> -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer flex f-ai-center f-jc-center">
+      <p>CaDec24 &copy; ex-yes-no</p>
+    </footer>
+  </body>
+</html>
